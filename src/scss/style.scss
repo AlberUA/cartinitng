@@ -1,0 +1,72 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background-color: #000;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    @extend %ub-500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding: 5px;
+    transition: color 0.2s;
+    &:hover {
+      color: #f2c938;
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    @extend %ub-400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    transition: color 0.2s;
+    margin: 0 40px 0 42px;
+    &:hover {
+      color: #f2c938;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+  &__btn {
+    @extend %ub-500;
+    padding: 12px 37px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    background: #f2c938;
+    border-radius: 5px;
+    transition: background-color .2s;
+    &:hover{
+      background: #d3a910;
+    }
+  }
+}
+
+@import "media";
