@@ -1,23 +1,1156 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{
-"title": "Document"
-})
+  @@include('html/head.html',{ "title": "Document" })
 
-<body>
-  @@include('html/header.html',{})
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
 
-  <main>
+      <main class="main">
+        <section class="top">
+          <div class="swiper top__slider">
+            <div class="swiper-wrapper top__wrapper">
+              <div class="swiper-slide top__slide">
+                <img class="top__slide-img" src="./img/top-img/1.jpg" alt="" />
+                <div class="container top__slide-container">
+                  <div class="top__box">
+                    <h1 class="top__box-title">
+                      Welcome to our car tinting service.
+                    </h1>
+                    <p class="top__box-text">
+                      With our high-quality tints, we can help you reduce the
+                      amount of heat and UV radiation that enters your car,
+                      making it more comfortable to drive and protecting your
+                      skin and interior from sun damage.
+                    </p>
+                    <div class="top__box-bottom">
+                      <div class="top__bar">
+                        <a class="top__bar-btn" href="#">Book now</a>
+                        <a class="top__bar-num" href="tel:+16477811116">
+                          <svg
+                            width="37"
+                            height="38"
+                            viewBox="0 0 37 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M30.6119 17.3529H33.6481C33.6481 9.56518 27.7686 3.69177 19.9703 3.69177V6.72791C26.1367 6.72791 30.6119 11.1956 30.6119 17.3529Z"
+                              fill="#F2C938"
+                            />
+                            <path
+                              d="M19.9856 12.8008C23.1781 12.8008 24.5398 14.1625 24.5398 17.355H27.5759C27.5759 12.4592 24.8813 9.76466 19.9856 9.76466V12.8008ZM25.1804 21.0636C24.8887 20.7985 24.5054 20.6571 24.1114 20.6693C23.7174 20.6815 23.3435 20.8463 23.0688 21.1289L19.436 24.8649C18.5616 24.6979 16.8037 24.1499 14.9941 22.3449C13.1846 20.5338 12.6366 18.7714 12.4742 17.903L16.2071 14.2688C16.4901 13.9942 16.6551 13.6203 16.6673 13.2262C16.6795 12.8321 16.5378 12.4487 16.2724 12.1571L10.6631 5.98922C10.3975 5.69677 10.0284 5.51938 9.63408 5.49472C9.2398 5.47006 8.85143 5.60008 8.55146 5.85715L5.25726 8.68227C4.9948 8.94568 4.83815 9.29626 4.81702 9.6675C4.79424 10.047 4.36008 19.037 11.331 26.011C17.4124 32.0909 25.0301 32.5357 27.1281 32.5357C27.4347 32.5357 27.623 32.5266 27.6731 32.5235C28.0442 32.5028 28.3946 32.3454 28.6568 32.0818L31.4804 28.7861C31.7376 28.4863 31.8679 28.098 31.8435 27.7037C31.8192 27.3095 31.642 26.9402 31.3498 26.6744L25.1804 21.0636V21.0636Z"
+                              fill="#F2C938"
+                            />
+                          </svg>
+                          +1 (647) 781-1116
+                        </a>
+                      </div>
+                      <div class="top__customers">
+                        <img
+                          class="top__customers-img"
+                          src="./img/top-img/customers.png"
+                          alt=""
+                        />
+                        <div class="top__customers-box">
+                          <div class="top__customers-title">150+</div>
+                          <div class="top__customers-text">our Customers</div>
+                          <img
+                            class="top__customers-start"
+                            src="./img/top-img/stars.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top__slide">
+                <img class="top__slide-img" src="./img/top-img/2.jpg" alt="" />
+                <div class="container top__slide-container">
+                  <div class="top__box">
+                    <h1 class="top__box-title">
+                      Welcome to our car tinting service.
+                    </h1>
+                    <p class="top__box-text">
+                      With our high-quality tints, we can help you reduce the
+                      amount of heat and UV radiation that enters your car,
+                      making it more comfortable to drive and protecting your
+                      skin and interior from sun damage.
+                    </p>
+                    <div class="top__box-bottom">
+                      <div class="top__bar">
+                        <a class="top__bar-btn" href="#">Book now</a>
+                        <a class="top__bar-num" href="tel:+16477811116">
+                          <svg
+                            width="37"
+                            height="38"
+                            viewBox="0 0 37 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M30.6119 17.3529H33.6481C33.6481 9.56518 27.7686 3.69177 19.9703 3.69177V6.72791C26.1367 6.72791 30.6119 11.1956 30.6119 17.3529Z"
+                              fill="#F2C938"
+                            />
+                            <path
+                              d="M19.9856 12.8008C23.1781 12.8008 24.5398 14.1625 24.5398 17.355H27.5759C27.5759 12.4592 24.8813 9.76466 19.9856 9.76466V12.8008ZM25.1804 21.0636C24.8887 20.7985 24.5054 20.6571 24.1114 20.6693C23.7174 20.6815 23.3435 20.8463 23.0688 21.1289L19.436 24.8649C18.5616 24.6979 16.8037 24.1499 14.9941 22.3449C13.1846 20.5338 12.6366 18.7714 12.4742 17.903L16.2071 14.2688C16.4901 13.9942 16.6551 13.6203 16.6673 13.2262C16.6795 12.8321 16.5378 12.4487 16.2724 12.1571L10.6631 5.98922C10.3975 5.69677 10.0284 5.51938 9.63408 5.49472C9.2398 5.47006 8.85143 5.60008 8.55146 5.85715L5.25726 8.68227C4.9948 8.94568 4.83815 9.29626 4.81702 9.6675C4.79424 10.047 4.36008 19.037 11.331 26.011C17.4124 32.0909 25.0301 32.5357 27.1281 32.5357C27.4347 32.5357 27.623 32.5266 27.6731 32.5235C28.0442 32.5028 28.3946 32.3454 28.6568 32.0818L31.4804 28.7861C31.7376 28.4863 31.8679 28.098 31.8435 27.7037C31.8192 27.3095 31.642 26.9402 31.3498 26.6744L25.1804 21.0636V21.0636Z"
+                              fill="#F2C938"
+                            />
+                          </svg>
+                          +1 (647) 781-1116
+                        </a>
+                      </div>
+                      <div class="top__customers">
+                        <img
+                          class="top__customers-img"
+                          src="./img/top-img/customers.png"
+                          alt=""
+                        />
+                        <div class="top__customers-box">
+                          <div class="top__customers-title">150+</div>
+                          <div class="top__customers-text">our Customers</div>
+                          <img
+                            class="top__customers-start"
+                            src="./img/top-img/stars.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide top__slide">
+                <img class="top__slide-img" src="./img/top-img/3.jpg" alt="" />
+                <div class="container top__slide-container">
+                  <div class="top__box">
+                    <h1 class="top__box-title">
+                      Welcome to our car tinting service.
+                    </h1>
+                    <p class="top__box-text">
+                      With our high-quality tints, we can help you reduce the
+                      amount of heat and UV radiation that enters your car,
+                      making it more comfortable to drive and protecting your
+                      skin and interior from sun damage.
+                    </p>
+                    <div class="top__box-bottom">
+                      <div class="top__bar">
+                        <a class="top__bar-btn" href="#">Book now</a>
+                        <a class="top__bar-num" href="tel:+16477811116">
+                          <svg
+                            width="37"
+                            height="38"
+                            viewBox="0 0 37 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M30.6119 17.3529H33.6481C33.6481 9.56518 27.7686 3.69177 19.9703 3.69177V6.72791C26.1367 6.72791 30.6119 11.1956 30.6119 17.3529Z"
+                              fill="#F2C938"
+                            />
+                            <path
+                              d="M19.9856 12.8008C23.1781 12.8008 24.5398 14.1625 24.5398 17.355H27.5759C27.5759 12.4592 24.8813 9.76466 19.9856 9.76466V12.8008ZM25.1804 21.0636C24.8887 20.7985 24.5054 20.6571 24.1114 20.6693C23.7174 20.6815 23.3435 20.8463 23.0688 21.1289L19.436 24.8649C18.5616 24.6979 16.8037 24.1499 14.9941 22.3449C13.1846 20.5338 12.6366 18.7714 12.4742 17.903L16.2071 14.2688C16.4901 13.9942 16.6551 13.6203 16.6673 13.2262C16.6795 12.8321 16.5378 12.4487 16.2724 12.1571L10.6631 5.98922C10.3975 5.69677 10.0284 5.51938 9.63408 5.49472C9.2398 5.47006 8.85143 5.60008 8.55146 5.85715L5.25726 8.68227C4.9948 8.94568 4.83815 9.29626 4.81702 9.6675C4.79424 10.047 4.36008 19.037 11.331 26.011C17.4124 32.0909 25.0301 32.5357 27.1281 32.5357C27.4347 32.5357 27.623 32.5266 27.6731 32.5235C28.0442 32.5028 28.3946 32.3454 28.6568 32.0818L31.4804 28.7861C31.7376 28.4863 31.8679 28.098 31.8435 27.7037C31.8192 27.3095 31.642 26.9402 31.3498 26.6744L25.1804 21.0636V21.0636Z"
+                              fill="#F2C938"
+                            />
+                          </svg>
+                          +1 (647) 781-1116
+                        </a>
+                      </div>
+                      <div class="top__customers">
+                        <img
+                          class="top__customers-img"
+                          src="./img/top-img/customers.png"
+                          alt=""
+                        />
+                        <div class="top__customers-box">
+                          <div class="top__customers-title">150+</div>
+                          <div class="top__customers-text">our Customers</div>
+                          <img
+                            class="top__customers-start"
+                            src="./img/top-img/stars.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="top__pagination"></div>
+            </div>
+          </div>
+        </section>
 
-    
+        <section class="choose">
+          <div class="container">
+            <div class="choose__wrapper">
+              <div class="choose__items">
+                <div class="choose__item">
+                  <svg
+                    width="60"
+                    height="61"
+                    viewBox="0 0 60 61"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M30 42.75V48.7C30 53.375 28.125 55.25 23.425 55.25H11.55C6.875 55.25 5 53.375 5 48.7V36.825C5 32.125 6.875 30.25 11.55 30.25H17.5V36.175C17.5 40.875 19.375 42.75 24.05 42.75H30Z"
+                      fill="#F2C938"
+                    />
+                    <path
+                      opacity="0.6"
+                      d="M42.5 30.25V36.175C42.5 40.875 40.625 42.75 35.925 42.75H24.05C19.375 42.75 17.5 40.875 17.5 36.175V24.3C17.5 19.625 19.375 17.75 24.05 17.75H30V23.675C30 28.375 31.875 30.25 36.55 30.25H42.5Z"
+                      fill="#F2C938"
+                    />
+                    <path
+                      d="M55 11.8V23.675C55 28.375 53.125 30.25 48.425 30.25H36.55C31.875 30.25 30 28.375 30 23.675V11.8C30 7.125 31.875 5.25 36.55 5.25H48.425C53.125 5.25 55 7.125 55 11.8Z"
+                      fill="#F2C938"
+                    />
+                  </svg>
+                  <h3 class="choose__title">window Tint</h3>
+                  <div class="choose__text">
+                    We provide style, comfort and solar protection that improves
+                    your overall driving experience
+                  </div>
+                </div>
+                <div class="choose__item">
+                  <svg
+                    width="60"
+                    height="61"
+                    viewBox="0 0 60 61"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M14.35 40.25C14.625 39.025 14.125 37.275 13.25 36.4L7.17501 30.325C5.27501 28.425 4.52501 26.4 5.07501 24.65C5.65001 22.9 7.42501 21.7 10.075 21.25L17.875 19.95C19 19.75 20.375 18.75 20.9 17.725L25.2 9.1C26.45 6.625 28.15 5.25 30 5.25C31.85 5.25 33.55 6.625 34.8 9.1L39.1 17.725C39.425 18.375 40.1 19 40.825 19.425L13.9 46.35C13.55 46.7 12.95 46.375 13.05 45.875L14.35 40.25Z"
+                      fill="#F2C938"
+                    />
+                    <path
+                      d="M46.75 36.405C45.85 37.305 45.35 39.03 45.65 40.255L47.375 47.78C48.1 50.905 47.65 53.255 46.1 54.38C45.4416 54.8402 44.6529 55.0768 43.85 55.055C42.575 55.055 41.075 54.58 39.425 53.605L32.1 49.255C30.95 48.58 29.05 48.58 27.9 49.255L20.575 53.605C17.8 55.23 15.425 55.505 13.9 54.38C13.325 53.955 12.9 53.38 12.625 52.63L43.025 22.23C44.175 21.08 45.8 20.555 47.375 20.83L49.9 21.255C52.55 21.705 54.325 22.905 54.9 24.655C55.45 26.405 54.7 28.43 52.8 30.33L46.75 36.405Z"
+                      fill="#F2C938"
+                    />
+                  </svg>
+                  <h3 class="choose__title">Paint Protection (PPF)</h3>
+                  <div class="choose__text">
+                    Protect your investment from rocks, gravel, insects and salt
+                    with our invisible paint protection packages
+                  </div>
+                </div>
+                <div class="choose__item">
+                  <svg
+                    width="60"
+                    height="61"
+                    viewBox="0 0 60 61"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M45.82 14.425L16.47 43.775C15.37 44.875 13.52 44.725 12.62 43.425C9.52001 38.9 7.69501 33.55 7.69501 28.05V17.075C7.69501 15.025 9.24501 12.7 11.145 11.925L25.07 6.22503C26.6234 5.58132 28.2885 5.25 29.97 5.25C31.6515 5.25 33.3166 5.58132 34.87 6.22503L44.97 10.35C46.645 11.025 47.07 13.175 45.82 14.425Z"
+                      fill="#F2C938"
+                    />
+                    <path
+                      d="M48.175 17.8549C49.8 16.4799 52.275 17.6549 52.275 19.7799V28.0549C52.275 40.2799 43.4 51.7299 31.275 55.0799C30.45 55.3049 29.55 55.3049 28.7 55.0799C25.1907 54.0943 21.9053 52.4389 19.025 50.2049C17.825 49.2799 17.7 47.5299 18.75 46.4549C24.2 40.8799 40.15 24.6299 48.175 17.8549Z"
+                      fill="#F2C938"
+                    />
+                  </svg>
+                  <h3 class="choose__title">Ceramic coating</h3>
+                  <div class="choose__text">
+                    World leader in nanotechnology development and manufacturing
+                    for automotive, marine, and aerospace applications.
+                  </div>
+                </div>
+              </div>
+              <div class="choose__main-item">
+                <h3 class="choose__main-title">Why choose us</h3>
+                <div class="choose__main-text">
+                  Our team of experienced technicians uses only the best
+                  materials and techniques to ensure that your car windows are
+                  tinted to perfection.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    
-    
-  </main>
+        <section class="tint">
+          <div class="container">
+            <div class="tint__wrapper">
+              <div class="tint__title-decor">Window Tint</div>
+              <div class="tint__box">
+                <h2 class="tint__box-title">Window Tint</h2>
+                <p class="tint__box-text">
+                  Window tinting is a process in which a thin laminated film is
+                  applied to the glass that changes the colour to a darker hue.
+                </p>
+                <div class="tint__inner">
+                  <div class="tint__item">
+                    <div class="tint__item-subtitle">CERAMIC</div>
+                    <div class="tint__item-title">$360</div>
+                    <p class="tint__item-text">$480</p>
+                    <p class="tint__item-subtext">CIR</p>
+                    <div class="tint__item-link">Book Now</div>
+                  </div>
+                  <div class="tint__item">
+                    <div class="tint__item-subtitle">HYBRID</div>
+                    <div class="tint__item-title">$299</div>
+                    <p class="tint__item-text">$380</p>
+                    <p class="tint__item-subtext">HP SUNTEK</p>
+                    <div class="tint__item-link">Book Now</div>
+                  </div>
+                  <div class="tint__item">
+                    <div class="tint__item-subtitle">CARBON</div>
+                    <div class="tint__item-title">$219</div>
+                    <p class="tint__item-text">$350</p>
+                    <p class="tint__item-subtext">CARBON</p>
+                    <div class="tint__item-link">Book Now</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper tint__slider">
+                <div class="swiper-wrapper tint__slider-wrapper">
+                  <div class="swiper-slide tint__slide">
+                    <img src="./img/tint-img/1.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide tint__slide">
+                    <img src="./img/tint-img/2.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide tint__slide">
+                    <img src="./img/tint-img/3.jpg" alt="" />
+                  </div>
+                  <div class="tint__pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  @@include('html/footer.html',{})
+        <section class="video">
+          <img class="video__img" src="./img/video-img/1.jpg" alt="" />
+          <div class="container">
+            <div class="video__wrapper">
+              <a class="video__play" href="#">
+                <span class="video__play-span">
+                  <svg
+                    width="22"
+                    height="25"
+                    viewBox="0 0 22 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.5 9.83568C22.5 10.9904 22.5 13.8771 20.5 15.0318L4.5 24.2694C2.5 25.4241 -1.13566e-06 23.9808 -1.03471e-06 21.6714L-2.27131e-07 3.19616C-1.26184e-07 0.886754 2.5 -0.556626 4.5 0.598075L20.5 9.83568Z"
+                      fill="#F2C938"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a class="video__bar" href="#">
+                <div class="video__bar-title">Paint Protection (PPF)</div>
+                <div class="video__bar-img">
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.4225 16.4999C21.4225 19.2224 19.2225 21.4224 16.5 21.4224C13.7775 21.4224 11.5775 19.2224 11.5775 16.4999C11.5775 13.7774 13.7775 11.5774 16.5 11.5774C19.2225 11.5774 21.4225 13.7774 21.4225 16.4999Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16.5 27.8712C21.3538 27.8712 25.8775 25.0112 29.0263 20.0612C30.2638 18.1225 30.2638 14.8637 29.0263 12.925C25.8775 7.97499 21.3538 5.11499 16.5 5.11499C11.6463 5.11499 7.12253 7.97499 3.97378 12.925C2.73628 14.8637 2.73628 18.1225 3.97378 20.0612C7.12253 25.0112 11.6463 27.8712 16.5 27.8712Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
 
-  <script src="js/app.min.js"></script>
-</body>
+        <section class="paint">
+          <div class="container paint__container">
+            <div class="paint__wrapper">
+              <div class="paint__title-decor">Paint Protection</div>
+              <div class="paint__box">
+                <h3 class="paint__box-title">Paint Protection (PPF)</h3>
+                <ul class="paint__box-list">
+                  <li class="paint__box-item">
+                    HIGH IMPACT PACKAGE (Popular add-on): Headlights, foglights,
+                    mirrors, rear bumper ledge $200
+                  </li>
+                  <li class="paint__box-item">Grille kits from $200</li>
+                  <li class="paint__box-item">Headlights from $150</li>
+                  <li class="paint__box-item">
+                    Complete rocker panels from $400
+                  </li>
+                  <li class="paint__box-item">Top of rear bumper ledge $100</li>
+                  <li class="paint__box-item">
+                    A-pillars & front of roof $200
+                  </li>
+                  <li class="paint__box-item">
+                    Front of rear wheel arches $100
+                  </li>
+                  <li class="paint__box-item">Mirrors $100</li>
+                </ul>
+              </div>
+              <div class="paint__list">
+                <div class="paint__item">
+                  <img
+                    src="./img/paint-img/1.png"
+                    alt=""
+                    class="paint__item-img"
+                  />
+                  <h5 class="paint__item-title">BRONZE PACKAGE 18”</h5>
+                  <div class="paint__item-price">$260</div>
+                  <div class="paint__item-price-old">$350</div>
+                  <a href="#" class="paint__item-link"> Book Now </a>
+                </div>
+                <div class="paint__item">
+                  <img
+                    src="./img/paint-img/2.png"
+                    alt=""
+                    class="paint__item-img"
+                  />
+                  <h5 class="paint__item-title">SILVER PACKAGE</h5>
+                  <div class="paint__item-price">$950</div>
+                  <div class="paint__item-price-old">$1200</div>
+                  <a href="#" class="paint__item-link"> Book Now </a>
+                </div>
+                <div class="paint__item">
+                  <img
+                    src="./img/paint-img/3.png"
+                    alt=""
+                    class="paint__item-img"
+                  />
+                  <h5 class="paint__item-title">PLATINUM PACKAGE</h5>
+                  <div class="paint__item-price">$1650</div>
+                  <div class="paint__item-price-old">$1800</div>
+                  <a href="#" class="paint__item-link"> Book Now </a>
+                </div>
+                <div class="paint__item">
+                  <img
+                    src="./img/paint-img/4.png"
+                    alt=""
+                    class="paint__item-img"
+                  />
+                  <h5 class="paint__item-title">COMPLETE PACKAGE</h5>
+                  <div class="paint__item-price">$4800</div>
+                  <div class="paint__item-price-old">$5500</div>
+                  <a href="#" class="paint__item-link"> Book Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="gallery">
+          <div class="container">
+            <div class="gallery__bar">
+              <div class="gallery__bar-title">Gallery</div>
+              <div class="gallery__bar-btns">
+                <div class="gallery__bar-btn gallery__bar-btn-prev">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.4453 12.7137C24.4453 12.032 24.0273 11.4687 23.485 11.3795L23.3342 11.3672L3.80235 11.3683L10.8586 2.85233C11.2935 2.32763 11.295 1.4751 10.862 0.948147C10.4684 0.469097 9.85119 0.424028 9.41552 0.814001L9.29066 0.944048L0.327702 11.7588C0.270382 11.828 0.220596 11.9028 0.178341 11.9819C0.166407 12.0057 0.154257 12.03 0.14274 12.0548C0.132147 12.0761 0.122574 12.0982 0.113543 12.1206C0.100998 12.1531 0.0887432 12.1867 0.0776157 12.2209C0.0685749 12.2474 0.0610256 12.2731 0.0541401 12.299C0.0459538 12.3311 0.0380001 12.3653 0.0311584 12.4001C0.0260715 12.4244 0.0220432 12.4477 0.0185299 12.4712C0.0135899 12.506 0.00938416 12.5421 0.00638199 12.5787C0.00379181 12.6065 0.0022316 12.6341 0.00136948 12.6618C0.00114632 12.6785 0.000865936 12.6961 0.000865936 12.7137L0.00142288 12.7658C0.00227547 12.7923 0.00376511 12.8187 0.00589371 12.845L0.000865936 12.7137C0.000865936 12.7986 0.00736237 12.8818 0.019783 12.9624C0.0226631 12.9816 0.0260944 13.0014 0.0298958 13.0211C0.0377884 13.0616 0.0469093 13.1006 0.0574112 13.1389C0.0625668 13.1579 0.068573 13.1782 0.0749912 13.1984C0.0879745 13.2389 0.102087 13.2775 0.117613 13.3151C0.124826 13.3328 0.132904 13.3514 0.141363 13.3697C0.155249 13.3996 0.169554 13.428 0.184679 13.4557C0.195351 13.4753 0.207169 13.4957 0.219509 13.5158L0.229124 13.5313C0.25906 13.5787 0.291534 13.6236 0.326303 13.6658L0.327637 13.667L9.2906 24.4836C9.72541 25.0083 10.4289 25.0065 10.8619 24.4796C11.2556 24.0006 11.2902 23.2525 10.9665 22.7262L10.8587 22.5755L3.80531 14.0612L23.3342 14.0601C23.9479 14.0601 24.4453 13.4573 24.4453 12.7137Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="gallery__bar-btn gallery__bar-btn-next">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.4453 12.7137C24.4453 12.032 24.0273 11.4687 23.485 11.3795L23.3342 11.3672L3.80235 11.3683L10.8586 2.85233C11.2935 2.32763 11.295 1.4751 10.862 0.948147C10.4684 0.469097 9.85119 0.424028 9.41552 0.814001L9.29066 0.944048L0.327702 11.7588C0.270382 11.828 0.220596 11.9028 0.178341 11.9819C0.166407 12.0057 0.154257 12.03 0.14274 12.0548C0.132147 12.0761 0.122574 12.0982 0.113543 12.1206C0.100998 12.1531 0.0887432 12.1867 0.0776157 12.2209C0.0685749 12.2474 0.0610256 12.2731 0.0541401 12.299C0.0459538 12.3311 0.0380001 12.3653 0.0311584 12.4001C0.0260715 12.4244 0.0220432 12.4477 0.0185299 12.4712C0.0135899 12.506 0.00938416 12.5421 0.00638199 12.5787C0.00379181 12.6065 0.0022316 12.6341 0.00136948 12.6618C0.00114632 12.6785 0.000865936 12.6961 0.000865936 12.7137L0.00142288 12.7658C0.00227547 12.7923 0.00376511 12.8187 0.00589371 12.845L0.000865936 12.7137C0.000865936 12.7986 0.00736237 12.8818 0.019783 12.9624C0.0226631 12.9816 0.0260944 13.0014 0.0298958 13.0211C0.0377884 13.0616 0.0469093 13.1006 0.0574112 13.1389C0.0625668 13.1579 0.068573 13.1782 0.0749912 13.1984C0.0879745 13.2389 0.102087 13.2775 0.117613 13.3151C0.124826 13.3328 0.132904 13.3514 0.141363 13.3697C0.155249 13.3996 0.169554 13.428 0.184679 13.4557C0.195351 13.4753 0.207169 13.4957 0.219509 13.5158L0.229124 13.5313C0.25906 13.5787 0.291534 13.6236 0.326303 13.6658L0.327637 13.667L9.2906 24.4836C9.72541 25.0083 10.4289 25.0065 10.8619 24.4796C11.2556 24.0006 11.2902 23.2525 10.9665 22.7262L10.8587 22.5755L3.80531 14.0612L23.3342 14.0601C23.9479 14.0601 24.4453 13.4573 24.4453 12.7137Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="gallery__wrapper">
+              <div class="swiper gallery__slider">
+                <div class="swiper-wrapper gallery__slider-wrapper">
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide gallery__slide">
+                    <img
+                      class="gallery__slide-img"
+                      src="./img/gallery-img/3.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="coating">
+          <div class="container">
+            <div class="coating__wrapper">
+              <div class="coating__title-decor">Ceramic coating</div>
+              <div class="coating__box">
+                <h3 class="coating__box-title">Ceramic coating</h3>
+                <p class="coating__box-text">
+                  Protects paint by reducing swirl marks, prevents oxidation and
+                  staining from tree sap and bird droppings and creates a
+                  hydrophobic surface for ease of washing and keeping the
+                  vehicle looking clean for longer as well as providing an
+                  extreme gloss shine!
+                </p>
+                <div class="coating__box-video">
+                  <img src="./img/coating-img/1.jpg" alt="" />
+                  <a href="#">
+                    <svg
+                      width="14"
+                      height="15"
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.1666 5.75894C13.3133 6.42096 13.3133 8.07603 12.1666 8.73806L2.99331 14.0343C1.84664 14.6963 0.41331 13.8688 0.41331 12.5447L0.413311 1.95227C0.413311 0.628213 1.84664 -0.19932 2.99331 0.462708L12.1666 5.75894Z"
+                        fill="#F2C938"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="coating__items">
+                <div class="coating__item">
+                  <img
+                    src="./img/coating-img/item-img-1.png"
+                    alt=""
+                    class="coating__item-img"
+                  />
+                  <h4 class="coating__item-title">FEATURES</h4>
+                  <ul class="coating__list">
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Multi-layerable
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Professional Use
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Certified and Patented
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Extreme Gloss
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Hydrophobic
+                    </li>
+                  </ul>
+                  <a href="#" class="coating__item-link"> Book now </a>
+                </div>
+                <div class="coating__item">
+                  <img
+                    src="./img/coating-img/item-img-2.png"
+                    alt=""
+                    class="coating__item-img"
+                  />
+                  <h4 class="coating__item-title">FEATURES</h4>
+                  <ul class="coating__list">
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Multi-layerable
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Professional Use
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      SGS Tested
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Extreme Gloss
+                    </li>
+                    <li class="coating__list-item">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_12_1360)">
+                          <path
+                            d="M10.6451 19.7203C15.4946 19.7203 19.4624 15.7526 19.4624 10.9031C19.4624 6.05368 15.4946 2.08594 10.6451 2.08594C5.79568 2.08594 1.82794 6.05368 1.82794 10.9031C1.82794 15.7526 5.79568 19.7203 10.6451 19.7203Z"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.89771 10.9035L9.39297 13.3987L14.3923 8.4082"
+                            stroke="#F2C938"
+                            stroke-width="1.98387"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_12_1360">
+                            <rect
+                              width="21.1613"
+                              height="21.1613"
+                              fill="white"
+                              transform="translate(0.0645142 0.322754)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Hydrophobic
+                    </li>
+                  </ul>
+                  <a href="#" class="coating__item-link"> Book now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="quote">
+          <div class="container">
+            <div class="quote__wrapper">
+              <div class="quote__box">
+                <h3 class="quote__box-title">Get a Free quote</h3>
+                <p class="quote__box-text">
+                  Enim tempor eget pharetra facilisis sed maecenas adipiscing.
+                  Eu leo molestie vel, ornare non id blandit netus.
+                </p>
+                <form class="quote__form">
+                  <div class="quote__form-item">
+                    <input
+                      class="quote__input"
+                      name=""
+                      id="name"
+                      placeholder="Name"
+                    />
+                    <label class="quote__label" for="name">
+                      Name <span>*</span>
+                    </label>
+                  </div>
+                  <div class="quote__form-item">
+                    <input
+                      class="quote__input"
+                      name=""
+                      data-phone-pattern
+                      id="phone"
+                      placeholder="Phone number"
+                    />
+                    <label class="quote__label" for="phone">
+                      Phone number <span>*</span>
+                    </label>
+                  </div>
+                  <div class="quote__form-item">
+                    <input
+                      class="quote__input"
+                      name=""
+                      id="email"
+                      placeholder="Email"
+                    />
+                    <label class="quote__label" for="email"> Email </label>
+                  </div>
+                  <div class="quote__form-item">
+                    <input
+                      class="quote__input"
+                      name=""
+                      id="message"
+                      placeholder="Message"
+                    />
+                    <label class="quote__label" for="message"> Message </label>
+                  </div>
+                  <button class="quote__button">Send Message</button>
+                </form>
+                <div class="quote__bottom">
+                  <div class="quote__bottom-box">
+                    <a class="quote__bottom-link" href="tel:+16477811116">
+                      <svg
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.0736 12.3954H24.2809C24.2809 6.73351 20.0064 2.46338 14.3368 2.46338V4.67074C18.8199 4.67074 22.0736 7.91886 22.0736 12.3954Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M14.3479 9.08585C16.669 9.08585 17.659 10.0758 17.659 12.3969H19.8663C19.8663 8.83752 17.9073 6.87849 14.3479 6.87849V9.08585ZM18.1247 15.0932C17.9126 14.9004 17.634 14.7976 17.3475 14.8065C17.0611 14.8153 16.7893 14.9351 16.5895 15.1406L13.9484 17.8568C13.3127 17.7354 12.0346 17.337 10.719 16.0247C9.40344 14.708 9.00501 13.4266 8.88692 12.7953L11.6009 10.1531C11.8066 9.95348 11.9266 9.68164 11.9355 9.39511C11.9443 9.10857 11.8413 8.82984 11.6483 8.61789L7.57023 4.13364C7.37713 3.92102 7.10876 3.79206 6.8221 3.77413C6.53545 3.7562 6.2531 3.85072 6.03501 4.03762L3.64003 6.09157C3.44922 6.28307 3.33532 6.53795 3.31996 6.80785C3.30341 7.08377 2.98775 13.6198 8.05585 18.6901C12.4772 23.1103 18.0154 23.4337 19.5407 23.4337C19.7637 23.4337 19.9005 23.4271 19.937 23.4248C20.2068 23.4097 20.4616 23.2953 20.6521 23.1037L22.705 20.7076C22.892 20.4896 22.9867 20.2074 22.969 19.9207C22.9513 19.6341 22.8225 19.3656 22.6101 19.1724L18.1247 15.0932V15.0932Z"
+                          fill="white"
+                        />
+                      </svg>
+                      +1 (647) 781-1116
+                    </a>
+                    <a class="quote__bottom-link" href="#">
+                      <svg
+                        width="27"
+                        height="28"
+                        viewBox="0 0 27 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.2442 2.39941C10.8301 2.40226 8.51581 3.36249 6.80884 5.06946C5.10188 6.77642 4.14165 9.09075 4.1388 11.5048C4.13591 13.4775 4.7803 15.3967 5.97312 16.968C5.97312 16.968 6.22145 17.2949 6.26201 17.3421L13.2442 25.5767L20.2296 17.338C20.266 17.2941 20.5152 16.968 20.5152 16.968L20.516 16.9655C21.7082 15.3949 22.3523 13.4766 22.3495 11.5048C22.3467 9.09075 21.3864 6.77642 19.6795 5.06946C17.9725 3.36249 15.6582 2.40226 13.2442 2.39941ZM13.2442 14.8158C12.5893 14.8158 11.9491 14.6216 11.4046 14.2578C10.8601 13.894 10.4358 13.3769 10.1852 12.7718C9.93455 12.1668 9.86898 11.5011 9.99674 10.8588C10.1245 10.2165 10.4398 9.62657 10.9029 9.16351C11.366 8.70045 11.9559 8.38511 12.5982 8.25735C13.2405 8.12959 13.9062 8.19516 14.5112 8.44577C15.1162 8.69637 15.6334 9.12076 15.9972 9.66525C16.361 10.2097 16.5552 10.8499 16.5552 11.5048C16.5541 12.3826 16.2049 13.2241 15.5842 13.8448C14.9635 14.4655 14.122 14.8147 13.2442 14.8158Z"
+                          fill="white"
+                        />
+                      </svg>
+                      348 Bronte St. S Unit #15, Milton, ON L9T 0H7
+                    </a>
+                  </div>
+                  <div class="quote__bottom-socials">
+                    <div class="quote__bottom-social">
+                      <svg
+                        width="10"
+                        height="18"
+                        viewBox="0 0 10 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.18837 10.2679H8.27171L9.10504 6.93457H6.18837V5.2679C6.18837 4.40957 6.18837 3.60124 7.85504 3.60124H9.10504V0.801237C8.83337 0.765404 7.80754 0.68457 6.72421 0.68457C4.46171 0.68457 2.85504 2.0654 2.85504 4.60124V6.93457H0.355042V10.2679H2.85504V17.3512H6.18837V10.2679Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="quote__bottom-social">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.85837 1.03111C6.74107 0.990475 7.02251 0.981445 9.271 0.981445C11.5195 0.981445 11.8009 0.991228 12.6829 1.03111C13.5648 1.07099 14.1668 1.21171 14.6936 1.41564C15.2452 1.62409 15.7456 1.94992 16.1595 2.37133C16.5809 2.78446 16.906 3.28412 17.1136 3.83646C17.3183 4.36322 17.4583 4.96522 17.4989 5.84566C17.5396 6.72986 17.5486 7.01129 17.5486 9.25904C17.5486 11.5075 17.5388 11.789 17.4989 12.6717C17.459 13.5521 17.3183 14.1541 17.1136 14.6809C16.9059 15.2333 16.5803 15.7338 16.1595 16.1475C15.7456 16.5689 15.2452 16.894 14.6936 17.1017C14.1668 17.3064 13.5648 17.4463 12.6844 17.487C11.8009 17.5276 11.5195 17.5366 9.271 17.5366C7.02251 17.5366 6.74107 17.5268 5.85837 17.487C4.97794 17.4471 4.37593 17.3064 3.84918 17.1017C3.29678 16.894 2.79628 16.5683 2.38254 16.1475C1.96142 15.7341 1.63553 15.2339 1.42761 14.6816C1.22368 14.1549 1.08371 13.5528 1.04307 12.6724C1.00244 11.7882 0.993408 11.5068 0.993408 9.25904C0.993408 7.01054 1.00319 6.7291 1.04307 5.84716C1.08296 4.96522 1.22368 4.36322 1.42761 3.83646C1.63584 3.28418 1.96198 2.78394 2.38329 2.37058C2.79645 1.94955 3.29644 1.62367 3.84842 1.41564C4.37518 1.21171 4.97719 1.07175 5.85762 1.03111H5.85837ZM12.6159 2.52108C11.743 2.48119 11.4811 2.47292 9.271 2.47292C7.06088 2.47292 6.79901 2.48119 5.9261 2.52108C5.11866 2.55795 4.6807 2.69265 4.38873 2.80628C4.00269 2.95678 3.72652 3.13512 3.4368 3.42484C3.16217 3.69202 2.95082 4.01728 2.81824 4.37676C2.70461 4.66874 2.56991 5.1067 2.53304 5.91414C2.49316 6.78705 2.48488 7.04892 2.48488 9.25904C2.48488 11.4692 2.49316 11.731 2.53304 12.6039C2.56991 13.4114 2.70461 13.8493 2.81824 14.1413C2.95068 14.5003 3.16214 14.8261 3.4368 15.0932C3.70394 15.3679 4.02978 15.5794 4.38873 15.7118C4.6807 15.8254 5.11866 15.9601 5.9261 15.997C6.79901 16.0369 7.06013 16.0452 9.271 16.0452C11.4819 16.0452 11.743 16.0369 12.6159 15.997C13.4233 15.9601 13.8613 15.8254 14.1533 15.7118C14.5393 15.5613 14.8155 15.383 15.1052 15.0932C15.3799 14.8261 15.5913 14.5003 15.7238 14.1413C15.8374 13.8493 15.9721 13.4114 16.009 12.6039C16.0488 11.731 16.0571 11.4692 16.0571 9.25904C16.0571 7.04892 16.0488 6.78705 16.009 5.91414C15.9721 5.1067 15.8374 4.66874 15.7238 4.37676C15.5733 3.99073 15.3949 3.71456 15.1052 3.42484C14.838 3.15023 14.5127 2.93888 14.1533 2.80628C13.8613 2.69265 13.4233 2.55795 12.6159 2.52108V2.52108ZM8.21373 11.8108C8.80419 12.0566 9.46167 12.0898 10.0739 11.9046C10.6861 11.7195 11.215 11.3276 11.5704 10.7958C11.9257 10.2641 12.0854 9.62541 12.0222 8.98897C11.959 8.35252 11.6768 7.75776 11.2238 7.30628C10.935 7.01767 10.5858 6.79669 10.2014 6.65923C9.81691 6.52177 9.40677 6.47126 9.00047 6.51134C8.59417 6.55141 8.2018 6.68108 7.85162 6.89099C7.50144 7.10091 7.20216 7.38585 6.97532 7.72531C6.74849 8.06477 6.59974 8.45031 6.53978 8.85416C6.47983 9.25801 6.51016 9.67013 6.6286 10.0608C6.74703 10.4516 6.95063 10.8112 7.22472 11.1138C7.49881 11.4164 7.83659 11.6544 8.21373 11.8108ZM6.26247 6.25051C6.65756 5.85542 7.12659 5.54202 7.6428 5.32821C8.159 5.11439 8.71226 5.00434 9.271 5.00434C9.82974 5.00434 10.383 5.11439 10.8992 5.32821C11.4154 5.54202 11.8844 5.85542 12.2795 6.25051C12.6746 6.64559 12.988 7.11463 13.2018 7.63083C13.4157 8.14704 13.5257 8.7003 13.5257 9.25904C13.5257 9.81777 13.4157 10.371 13.2018 10.8872C12.988 11.4034 12.6746 11.8725 12.2795 12.2676C11.4816 13.0655 10.3994 13.5137 9.271 13.5137C8.14258 13.5137 7.06038 13.0655 6.26247 12.2676C5.46456 11.4697 5.0163 10.3875 5.0163 9.25904C5.0163 8.13062 5.46456 7.04842 6.26247 6.25051V6.25051ZM14.4693 5.63797C14.5672 5.54561 14.6456 5.43455 14.6998 5.31136C14.754 5.18817 14.783 5.05535 14.7849 4.92077C14.7869 4.7862 14.7618 4.65259 14.7112 4.52787C14.6606 4.40316 14.5855 4.28986 14.4904 4.19469C14.3952 4.09951 14.2819 4.02441 14.1572 3.97381C14.0325 3.92321 13.8989 3.89815 13.7643 3.90011C13.6297 3.90207 13.4969 3.93102 13.3737 3.98523C13.2505 4.03944 13.1394 4.11782 13.0471 4.21573C12.8675 4.40613 12.7691 4.65904 12.7729 4.92077C12.7768 5.1825 12.8824 5.43244 13.0675 5.61753C13.2526 5.80262 13.5026 5.90829 13.7643 5.9121C14.026 5.91592 14.2789 5.81758 14.4693 5.63797V5.63797Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quote__map">
+                <img src="./img/map.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="free">
+          <div class="container">
+            <div class="free__wrapper">
+              <h3 class="free__title">
+                Get a Free quote
+              </h3>
+              <p class="free__text">
+                If you're ready to give your car a new look and feel with professional window tinting, contact us today to schedule a consultation or learn more about our services. We're here to help you get the most out of your vehicle and make every drive more enjoyable and comfortable.
+              </p>
+              <a href="#" class="free__link"> Book now </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @@include('html/footer.html',{})
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
