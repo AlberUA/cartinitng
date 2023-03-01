@@ -32,8 +32,8 @@
         left: 30px;
       }
     }
-    &__title{
-      &-decor{
+    &__title {
+      &-decor {
         left: -218px;
       }
     }
@@ -46,8 +46,8 @@
     &__list {
       grid-gap: 15px;
     }
-    &__title{
-      &-decor{
+    &__title {
+      &-decor {
         left: -194px;
       }
     }
@@ -178,7 +178,7 @@
       flex-direction: column;
       background-color: #343436;
       padding: 120px 15px 15px;
-      box-shadow: 5px 0px 1px transparent;
+      box-shadow: 5px 0px 2px transparent;
       transform: translateX(-100%);
       transition: all 0.2s;
       &--active {
@@ -335,7 +335,8 @@
     &__pagination {
       top: auto !important;
       bottom: 25px !important;
-      right: auto !important;
+      right: 50% !important;
+      transform: translateX(50%) !important;
       justify-content: center !important;
       flex-direction: row;
     }
@@ -401,6 +402,15 @@
     &__item {
       &-price {
         font-size: 38px;
+      }
+    }
+  }
+  .gallery {
+    &__bar {
+      &-btn {
+        &:hover {
+          background-color: #222224;
+        }
       }
     }
   }

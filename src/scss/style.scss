@@ -1011,7 +1011,7 @@
   }
   &__input:focus + label,
   &__input:not(:placeholder-shown) + label {
-    top: -1px;
+    top: 0;
     left: 14px;
     transform: translateY(0);
     font-size: 12px;

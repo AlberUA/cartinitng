@@ -1055,7 +1055,7 @@ body {
   outline: none;
 }
 .quote__input:focus + label, .quote__input:not(:placeholder-shown) + label {
-  top: -1px;
+  top: 0;
   left: 14px;
   transform: translateY(0);
   font-size: 12px;
@@ -1444,7 +1444,7 @@ body {
     flex-direction: column;
     background-color: #343436;
     padding: 120px 15px 15px;
-    box-shadow: 5px 0px 1px transparent;
+    box-shadow: 5px 0px 2px transparent;
     transform: translateX(-100%);
     transition: all 0.2s;
   }
@@ -1592,7 +1592,8 @@ body {
   .top__pagination {
     top: auto !important;
     bottom: 25px !important;
-    right: auto !important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
     justify-content: center !important;
     flex-direction: row;
   }
@@ -1649,6 +1650,10 @@ body {
   }
   .paint__item-price {
     font-size: 38px;
+  }
+
+  .gallery__bar-btn:hover {
+    background-color: #222224;
   }
 
   .footer__wrapper {

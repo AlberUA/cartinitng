@@ -59,7 +59,6 @@ const swiperTop = new Swiper(".top__slider", {
   autoplay: {
     delay: 7000,
   },
-  loop: true,
   fadeEffect: {
     crossFade: false,
   },
@@ -76,7 +75,6 @@ const swiperTint = new Swiper(".tint__slider", {
   fadeEffect: {
     crossFade: false,
   },
-  loop: true,
   autoplay: {
     delay: 7000,
   },
