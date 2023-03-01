@@ -1,3 +1,23 @@
+const mobBtn = document.querySelector(".header__mob-btn-wrapper");
+const mobTop = document.querySelector(".header__top");
+mobBtn.addEventListener("click", () => {
+  mobBtn.classList.toggle("header__mob-btn-wrapper--active");
+  mobTop.classList.toggle("header__top--active");
+});
+
+document.addEventListener("click", function (event) {
+  if (
+    !event.target.matches(".header__top") &&
+    !event.target.matches(".header__top--active") &&
+    !event.target.matches(".header__mob-btn-wrapper") &&
+    !event.target.matches(".header__mob-btn") &&
+    !event.target.matches(".header__mob-btn-wrapper--active")
+  ) {
+    mobBtn.classList.remove("header__mob-btn-wrapper--active");
+    mobTop.classList.remove("header__top--active");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   var eventCalllback = function (e) {
     var el = e.target,
@@ -48,20 +68,15 @@ const swiperTop = new Swiper(".top__slider", {
     type: "bullets",
     clickable: true,
   },
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  // },
 });
+
 const swiperTint = new Swiper(".tint__slider", {
   slidesPerView: 1,
   effect: "fade",
   fadeEffect: {
     crossFade: false,
   },
+  loop: true,
   autoplay: {
     delay: 7000,
   },
@@ -70,29 +85,45 @@ const swiperTint = new Swiper(".tint__slider", {
     type: "bullets",
     clickable: true,
   },
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  // },
 });
 const swiperGallery = new Swiper(".gallery__slider", {
-  slidesPerView: 5.8,
+  slidesPerView: 1.4,
   centeredSlides: true,
-  initialSlide: 1,
-  spaceBetween: 24,
+  initialSlide: 0,
+  spaceBetween: 10,
   navigation: {
     nextEl: ".gallery__bar-btn-next",
     prevEl: ".gallery__bar-btn-prev",
   },
 
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  // },
+  breakpoints: {
+    440: {
+      slidesPerView: 1.8,
+      spaceBetween: 24,
+    },
+    560: {
+      slidesPerView: 2.2,
+      spaceBetween: 24,
+    },
+    720: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      initialSlide: 1
+    },
+    1010: {
+      slidesPerView: 3.6,
+      spaceBetween: 24,
+      initialSlide: 1
+    },
+    1200: {
+      slidesPerView: 5.1,
+      spaceBetween: 24,
+      initialSlide: 2
+    },
+    1345: {
+      slidesPerView: 5.8,
+      spaceBetween: 24,
+      initialSlide: 2
+    },
+  },
 });
